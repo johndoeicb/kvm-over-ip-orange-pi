@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KVM over IP - Orange Pi</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🖥️ KVM over IP</h1>
+    {% if show_button %}
+    <form method="post" action="/start_vpn">
+        <button type="submit">Démarrer le VPN</button>
+    </form>
+    {% else %}
+    <p>Accès limité à ce PC.</p>
+    {% endif %}
+</body>
+</html>
+```
